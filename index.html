@@ -43,7 +43,15 @@
     .wrap { width: min(1120px, calc(100% - 48px)); margin: 0 auto; position: relative; }
     .nav { display: flex; justify-content: space-between; align-items: center; padding: calc(24px * var(--site-spacing-scale)) 0; border-bottom: 1px solid rgba(153, 181, 201, .14); }
     .brand { display: flex; align-items: center; gap: 11px; font-weight: 750; letter-spacing: -.03em; }
-    .brand-mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 11px; background: var(--site-primary); color: var(--site-on-primary); font-size: 14px; }
+    .brand-photo {
+  display: block;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  object-position: center 28%;
+  border-radius: 11px;
+  border: 1px solid rgba(97, 213, 197, .45);
+}
     .nav-links { display: flex; gap: 27px; color: #B5C4D1; font-size: 13px; }
     .nav-links a:hover, .text-link:hover { color: var(--accent); }
     .nav-cta { border: 1px solid rgba(130, 184, 255, .45); padding: 10px 15px; border-radius: 999px; color: #DCEBFA; font-size: 12px; }
